@@ -18,11 +18,11 @@
   margin-top: -20px !important;
   padding: 15px !important;
   color: #fff !important;
-  background: linear-gradient(to right bottom, #e7b894, #035353) !important; }
+  background: linear-gradient(to right bottom, #002a53, #002a53) !important; }
 
 .btn-custom {
   color: white;
-  background: linear-gradient(to right bottom, #e7b894, #035353) !important; }
+  background: linear-gradient(to right bottom, #002a53, #002a53) !important; }
 
 .form-group.is-focused > label {
   color: #e7b894 !important; }
