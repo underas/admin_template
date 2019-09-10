@@ -126,3 +126,15 @@
   position: relative;
   top: 10px;
 }
+
+.hoverPointer:hover{
+  cursor: pointer;
+}
+
+.hoverBlack:hover{
+  color:black !important;
+}
+
+.hoverNoAllow:hover{
+  cursor: not-allowed;
+}
