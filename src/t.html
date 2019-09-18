@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Create Account
+    Company Profile
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
     name='viewport' />
@@ -25,11 +25,6 @@
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="azure">
-      <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-      Tip 2: you can also add an image using data-image tag
-  -->
       <div class="logo">
         <div class="logo-avatar">
           <img src="../assets/img/faces/marc.jpg" alt="">
@@ -40,58 +35,58 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item">
+          <li class="nav-item active ">
             <a class="nav-link" href="./companyProfile.html">
               <i class="material-icons">work_outline</i>
-              <p style="font-size: 18px">Company Profile</p>
+              <p style="font-size: 21px">Company Profile</p>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="./createAccount.html">
               <i class="material-icons">account_circle</i>
-              <p style="font-size: 18px">Create Account</p>
+              <p style="font-size: 21px">Create Account</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./subAccountList.html">
               <i class="material-icons">supervised_user_circle</i>
-              <p style="font-size: 18px">Sub Account List</p>
+              <p style="font-size: 21px">Sub Account List</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./purchases.html">
               <i class="material-icons">shopping_cart</i>
-              <p style="font-size: 18px">Purchases</p>
+              <p style="font-size: 21px">Purchases</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./paymentHistory.html">
               <i class="material-icons">history</i>
-              <p style="font-size: 18px">Payment History</p>
+              <p style="font-size: 21px">Payment History</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./createNewProduct_1.html">
+            <a class="nav-link" href="./createNewProduct.html">
               <i class="material-icons">create_new_folder</i>
-              <p style="font-size: 18px">Create New Product</p>
+              <p style="font-size: 21px">Create New Product</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./productList.html">
               <i class="material-icons">list</i>
-              <p style="font-size: 18px">Product List</p>
+              <p style="font-size: 21px">Product List</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./UDI-Database.html">
               <i class="material-icons">save</i>
-              <p style="font-size: 18px">UDI Database</p>
+              <p style="font-size: 21px">UDI Database</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">
               <i class="material-icons">close</i>
-              <p style="font-size: 18px">Close Account</p>
+              <p style="font-size: 21px">Close Account</p>
             </a>
           </li>
         </ul>
@@ -141,7 +136,7 @@
         <div class="container-fluid d-flex align-items-center">
           <div class="row">
             <div class="col-lg-12 col-md-12">
-              <h1 class="display-2 text-white" style="font-weight: bold;">Create Account</h1>
+              <h1 class="display-2 text-white" style="font-weight: bold;">Company Profile</h1>
             </div>
           </div>
         </div>
@@ -153,35 +148,26 @@
             <div class="col-md-10">
               <div class="card">
                 <div class="card-header card-header-custom">
-                  <h4 class="card-title" style="font-weight: bold; font-size: 1.6785rem">Create Account</h4>
-                  <p class="card-category" style="font-weight: 600;font-size: 1.2rem;">Create new account</p>
+                  <h4 class="card-title" style="font-weight: bold; font-size: 1.6785rem">Edit Profile</h4>
+                  <p class="card-category" style="font-weight: 600;font-size: 1.2rem;">Complete or edit your company profile</p>
                 </div>
                 <div class="card-body">
                   <form>
-                    <div class="row ">
-                      <div class="col-md-6 mt-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating" style="top: -1rem;">Account ID</label>
-                          <input type="text" class="form-control hoverNoAllow" readonly>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating " style="top: -1rem;">Account Password</label>
-                          <input type="text" class="form-control hoverNoAllow" readonly>
-                        </div>
+                    <div class="row">
+                      <div class="col-md-12 mt-3">
+                        <p style="font-weight: bold; font-size: 30px">Company Information</p>
                       </div>
                     </div>
-                    <div class="row ">
+                    <div class="row">
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account Name</label>
+                          <label class="bmd-label-floating">Company Name</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account Job Title</label>
+                          <label class="bmd-label-floating">Country</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
@@ -189,98 +175,172 @@
                     <div class="row ">
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account Email</label>
+                          <label class="bmd-label-floating">Company Phone Number</label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Company Fax Number</label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Representative</label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Duns Number</label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Company Address</label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Company Web Site Url</label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 mt-5">
+                        <p style="font-weight: bold; font-size: 30px">Contact Information</p>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Company Account id</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account Phone</label>
+                          <label class="bmd-label-floating">Company Account Password</label>
+                          <input type="password" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Contact Person Name</label>
                           <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Contact Person Job Title</label>
+                          <input type="password" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Contact Person Email</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Contact Person Phone</label>
+                          <input type="password" class="form-control">
                         </div>
                       </div>
                     </div>
                     <div class="row mt-4">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label style="color: black; font-weight: bold;">Account Permission</label>
+                          <label>Role Of Device Laber (Multiple Selections)</label>
                           <div class="form-group">
                             <div class="row">
                               <div class="col-md-12">
                                 <div class="form-check" style="display:flex;">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Account-Role">
+                                    <input class="form-check-input" type="checkbox" value="" id="Device-Manufacturer">
                                     <span class="form-check-sign">
                                       <span class="check"></span>
                                     </span>
                                   </label>
-                                  <label for="Account-Role" class="hoverPointer hoverBlack">Account Role</label>
-                                </div>
-                              </div>
-                              <div class="col-md-12">
-                                <div class="form-check" style="display:flex;">
-                                  <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Create-New-DI">
-                                    <span class="form-check-sign">
-                                      <span class="check"></span>
-                                    </span>
-                                  </label>
-                                  <label for="Create-New-DI" class="hoverPointer hoverBlack">Create New DI</label>
-                                </div>
-                              </div>
-                              <div class="col-md-12">
-                                <div class="form-check" style="display:flex;">
-                                  <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Fetch-New-UDI">
-                                    <span class="form-check-sign">
-                                      <span class="check"></span>
-                                    </span>
-                                  </label>
-                                  <label for="Fetch-New-UDI" class="hoverPointer hoverBlack">Fetch New UDI</label>
+                                  <label for="Device-Manufacturer" class="hoverPointer hoverBlack">Device Manufacturer</label>
                                 </div>
                               </div>
                               <div class="col-md-12">
                                 <div class="form-check" style="display:flex;">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="checkbox" value=""
-                                      id="Database-Search/Download">
+                                      id="Specification-Developer">
                                     <span class="form-check-sign">
                                       <span class="check"></span>
                                     </span>
                                   </label>
-                                  <label for="Database-Search/Download" class="hoverPointer hoverBlack">Database
-                                    Search/Download</label>
+                                  <label for="Specification-Developer" class="hoverPointer hoverBlack">Specification Developer</label>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label style="color: black; font-weight: bold;">Account Active</label>
-                          <div class="form-group">
-                            <div class="row">
                               <div class="col-md-12">
                                 <div class="form-check" style="display:flex;">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Availability">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                      id="Single-Use-Device-Reprocessor">
                                     <span class="form-check-sign">
                                       <span class="check"></span>
                                     </span>
                                   </label>
-                                  <label for="Availability" class="hoverPointer hoverBlack">Availability</label>
+                                  <label for="Single-Use-Device-Reprocessor" class="hoverPointer hoverBlack">Single-Use Device Reprocessor</label>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-check" style="display:flex;">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                      id="Convenience-Kit-Assembler">
+                                    <span class="form-check-sign">
+                                      <span class="check"></span>
+                                    </span>
+                                  </label>
+                                  <label for="Convenience-Kit-Assembler" class="hoverPointer hoverBlack">Convenience Kit Assembler</label>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-check" style="display:flex;">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="" id="Repackager">
+                                    <span class="form-check-sign">
+                                      <span class="check"></span>
+                                    </span>
+                                  </label>
+                                  <label for="Repackager" class="hoverPointer hoverBlack">Repackager</label>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-check" style="display:flex;">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="" id="Relabeler">
+                                    <span class="form-check-sign">
+                                      <span class="check"></span>
+                                    </span>
+                                  </label>
+                                  <label for="Relabeler" class="hoverPointer hoverBlack">Relabeler</label>
                                 </div>
                               </div>
                             </div>
+
                           </div>
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-custom pull-right" style="font-size: 1.125rem">Create
-                      Account</button>
+                    <button type="submit" class="btn btn-custom pull-right" style="font-size: 1.125rem">Modify Company Profile</button>
                     <div class="clearfix"></div>
                   </form>
                 </div>

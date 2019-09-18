@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Create Account
+    Create New Product
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
     name='viewport' />
@@ -25,11 +25,6 @@
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="azure">
-      <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-      Tip 2: you can also add an image using data-image tag
-  -->
       <div class="logo">
         <div class="logo-avatar">
           <img src="../assets/img/faces/marc.jpg" alt="">
@@ -46,7 +41,7 @@
               <p style="font-size: 18px">Company Profile</p>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="./createAccount.html">
               <i class="material-icons">account_circle</i>
               <p style="font-size: 18px">Create Account</p>
@@ -70,7 +65,7 @@
               <p style="font-size: 18px">Payment History</p>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="./createNewProduct_1.html">
               <i class="material-icons">create_new_folder</i>
               <p style="font-size: 18px">Create New Product</p>
@@ -141,7 +136,7 @@
         <div class="container-fluid d-flex align-items-center">
           <div class="row">
             <div class="col-lg-12 col-md-12">
-              <h1 class="display-2 text-white" style="font-weight: bold;">Create Account</h1>
+              <h1 class="display-2 text-white" style="font-weight: bold;">Create New Product</h1>
             </div>
           </div>
         </div>
@@ -153,134 +148,216 @@
             <div class="col-md-10">
               <div class="card">
                 <div class="card-header card-header-custom">
-                  <h4 class="card-title" style="font-weight: bold; font-size: 1.6785rem">Create Account</h4>
-                  <p class="card-category" style="font-weight: 600;font-size: 1.2rem;">Create new account</p>
+                  <h4 class="card-title" style="font-weight: bold; font-size: 1.6785rem">Create New Product</h4>
+                  <p class="card-category" style="font-weight: 600;font-size: 1.2rem;">Complete or edit your company
+                    profile</p>
                 </div>
                 <div class="card-body">
                   <form>
-                    <div class="row ">
-                      <div class="col-md-6 mt-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating" style="top: -1rem;">Account ID</label>
-                          <input type="text" class="form-control hoverNoAllow" readonly>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating " style="top: -1rem;">Account Password</label>
-                          <input type="text" class="form-control hoverNoAllow" readonly>
-                        </div>
+                    <div class="row">
+                      <div class="col-md-12 mt-3">
+                        <p style="font-weight: bold; font-size: 30px">Company Information</p>
                       </div>
                     </div>
-                    <div class="row ">
+                    <div class="row">
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account Name</label>
+                          <label class="bmd-label-floating">GS1 Country Code(3 Digits)</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Account Job Title</label>
+                          <label class="bmd-label-floating">Company Prefix(6 Digits)</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                     </div>
-                    <div class="row ">
-                      <div class="col-md-6 mt-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Account Email</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Account Phone</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
+                    <div class="row mt-5">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label style="color: black; font-weight: bold;">Account Permission</label>
+                          <label>Country Of Sale(Multiple Selections)</label>
                           <div class="form-group">
                             <div class="row">
                               <div class="col-md-12">
                                 <div class="form-check" style="display:flex;">
                                   <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Account-Role">
+                                    <input class="form-check-input" type="checkbox" value="" id="Device-Manufacturer">
                                     <span class="form-check-sign">
                                       <span class="check"></span>
                                     </span>
                                   </label>
-                                  <label for="Account-Role" class="hoverPointer hoverBlack">Account Role</label>
-                                </div>
-                              </div>
-                              <div class="col-md-12">
-                                <div class="form-check" style="display:flex;">
-                                  <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Create-New-DI">
-                                    <span class="form-check-sign">
-                                      <span class="check"></span>
-                                    </span>
-                                  </label>
-                                  <label for="Create-New-DI" class="hoverPointer hoverBlack">Create New DI</label>
-                                </div>
-                              </div>
-                              <div class="col-md-12">
-                                <div class="form-check" style="display:flex;">
-                                  <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Fetch-New-UDI">
-                                    <span class="form-check-sign">
-                                      <span class="check"></span>
-                                    </span>
-                                  </label>
-                                  <label for="Fetch-New-UDI" class="hoverPointer hoverBlack">Fetch New UDI</label>
+                                  <label for="Device-Manufacturer" class="hoverPointer hoverBlack">US-FDA</label>
                                 </div>
                               </div>
                               <div class="col-md-12">
                                 <div class="form-check" style="display:flex;">
                                   <label class="form-check-label">
                                     <input class="form-check-input" type="checkbox" value=""
-                                      id="Database-Search/Download">
+                                      id="Specification-Developer">
                                     <span class="form-check-sign">
                                       <span class="check"></span>
                                     </span>
                                   </label>
-                                  <label for="Database-Search/Download" class="hoverPointer hoverBlack">Database
-                                    Search/Download</label>
+                                  <label for="Specification-Developer" class="hoverPointer hoverBlack">EU-MDR</label>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-check" style="display:flex;">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                      id="Single-Use-Device-Reprocessor">
+                                    <span class="form-check-sign">
+                                      <span class="check"></span>
+                                    </span>
+                                  </label>
+                                  <label for="Single-Use-Device-Reprocessor"
+                                    class="hoverPointer hoverBlack">Other</label>
                                 </div>
                               </div>
                             </div>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Product Common Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Brand Name/ Trade Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Model Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Version</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Product Number</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Remark</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ------------------->
+                    <div class="row">
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label for="deviceType">Device Type</label>
+                          <select class="form-control" data-style="btn btn-link" id="deviceType">
+                            <option>Medical Equipment</option>
+                            <option>Medical System</option>
+                            <option>Accessory</option>
+                            <option>Stand-alone Software</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label for="isActiveOrNot">Is The Medical Device Active Or Non-active?</label>
+                          <select class="form-control" data-style="btn btn-link" id="isActiveOrNot">
+                            <option>Active</option>
+                            <option>Non-active</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label for="isSterileOrNot">Is The Medical Device Supplied Sterile?</label>
+                          <select class="form-control" data-style="btn btn-link" id="isSterileOrNot">
+                            <option>Sterillzation</option>
+                            <option>Non-sterillzation</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label for="isSingleUseOrNot">Is The Medical Device Intended For Single Use?</label>
+                          <select class="form-control" data-style="btn btn-link" id="isSingleUseOrNot">
+                            <option>Single Use</option>
+                            <option>Re-use</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label for="isImplantedOrNot">Is The Medical Device Intended To Be Implanted?</label>
+                          <select class="form-control" data-style="btn btn-link" id="isImplantedOrNot">
+                            <option>Implanted</option>
+                            <option>Non-implanted</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-4">
+                        <div class="form-group">
+                          <label for="isOtcOrNot">Is The Medical Device OTC Device?</label>
+                          <select class="form-control" data-style="btn btn-link" id="isOtcOrNot">
+                            <option>Prescription</option>
+                            <option>Over-the Counter</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ------------------->
+                    <div class="row ">
+                      <div class="col-md-6 mt-4">
+                        <div class="form-check" style="display:flex;">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" id="isEqualToOne">
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                          <label for="isEqualToOne" class="hoverPointer hoverBlack">Is Unit Package Size Equal To
+                            1?</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mt-4">
+                        <div class="form-group">
+                          <label>How Many Unit Package You Have?</label>
+                          <input type="text" class="form-control">
                         </div>
                       </div>
                     </div>
                     <div class="row mt-4">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label style="color: black; font-weight: bold;">Account Active</label>
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <div class="form-check" style="display:flex;">
-                                  <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" value="" id="Availability">
-                                    <span class="form-check-sign">
-                                      <span class="check"></span>
-                                    </span>
-                                  </label>
-                                  <label for="Availability" class="hoverPointer hoverBlack">Availability</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <label class="bmd-label-floating">Unit Package Number</label>
+                          <input type="text" class="form-control">
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-custom pull-right" style="font-size: 1.125rem">Create
-                      Account</button>
+
+                    <a href="./createNewProduct_2.html">
+                      <button type="submit" class="btn btn-custom pull-right mt-5" style="font-size: 1.125rem">CREATE
+                        PRODUCT</button>
+                    </a>
                     <div class="clearfix"></div>
                   </form>
                 </div>
