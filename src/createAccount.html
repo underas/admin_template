@@ -83,7 +83,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./UDI-Database.html">
+            <a class="nav-link" href="">
               <i class="material-icons">save</i>
               <p style="font-size: 18px">UDI Database</p>
             </a>
@@ -123,9 +123,13 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="./changePassword.html" style="font-size: 1rem">Change Password</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#" style="font-size: 1rem">Log out</a>
+                    <button type="submit" class="btn btn-dropdown" style="font-size: 1rem">
+                        <i class="material-icons">vpn_key</i>
+                      Change Password</button>
+                    <div class="dropdown-divider"></div>
+                    <button type="submit" class="btn btn-dropdown" style="font-size: 1rem">
+                        <i class="material-icons">input</i>
+                      Log out</button>
                 </div>
               </li>
             </ul>
@@ -154,7 +158,6 @@
               <div class="card">
                 <div class="card-header card-header-custom">
                   <h4 class="card-title" style="font-weight: bold; font-size: 1.6785rem">Create Account</h4>
-                  <p class="card-category" style="font-weight: 600;font-size: 1.2rem;">Create new account</p>
                 </div>
                 <div class="card-body">
                   <form>
@@ -168,7 +171,7 @@
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
                           <label class="bmd-label-floating " style="top: -1rem;">Account Password</label>
-                          <input type="text" class="form-control hoverNoAllow" readonly>
+                          <input type="password" class="form-control hoverNoAllow" readonly>
                         </div>
                       </div>
                     </div>
@@ -190,13 +193,13 @@
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
                           <label class="bmd-label-floating">Account Email</label>
-                          <input type="text" class="form-control">
+                          <input type="email" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6 mt-4">
                         <div class="form-group">
                           <label class="bmd-label-floating">Account Phone</label>
-                          <input type="text" class="form-control">
+                          <input type="tel" class="form-control">
                         </div>
                       </div>
                     </div>
