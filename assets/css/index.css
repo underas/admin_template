@@ -250,3 +250,21 @@ footer {
         color: #fff; }
       .menubar .menu__box .menu__item:hover {
         background-color: rgba(0, 188, 212, 0.4); }
+
+.package .package__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 38, 62, 0.6);
+  color: white;
+  padding: 8px 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 16px;
+  transition: background-color 0.8s;
+  width: 100%; }
+
+.package .package__title:hover {
+  cursor: pointer;
+  background-color: #00263e; }
