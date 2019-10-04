@@ -21,11 +21,6 @@
     <link href="../assets/demo/demo.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/index.css">
     <link href="../assets/css/multi-select.css" media="screen" rel="stylesheet" type="text/css">
-    <style>
-        ul.ms-list>li:nth-child(1) {
-            background: #eeb9b9 !important;
-        }
-    </style>
 
 </head>
 
@@ -330,14 +325,15 @@
                                                         <div class="row mt-5 mb-3">
                                                             <div class="col-12"
                                                                 style="display:flex;justify-content: center;align-items: center">
-                                                                <select multiple="multiple" id="my-select"
-                                                                    name="my-select[]">
-                                                                    <option value='elem_1'>elem 1</option>
-                                                                    <option value='elem_2'>elem 2</option>
-                                                                    <option value='elem_3'>elem 3</option>
-                                                                    <option value='elem_4'>elem 4</option>
-                                                                    <option value='elem_100'>elem 100</option>
-                                                                </select>
+                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" style="width:350px">
+                                                                <option style="background-color: #eeb9b9;">a</option>
+                                                                <option style="background-color: #eeb9b9;">b</option>
+                                                                <option style="background-color: #eeb9b9;">c</option>
+                                                                <option >d</option>
+                                                            </select>
+                                                                <button type="button" style="width:50px" onclick="sonClickEvent(0,0,0)" id="shift1" >>></button>
+                                                                <button type="button" style="width:50px" onclick="rsonClickEvent(0,0,0)" id="rshift1"><<</button>
+                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" style="width:350px"></select>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -457,14 +453,15 @@
                                                         <div class="row mt-5 mb-3">
                                                             <div class="col-12"
                                                                 style="display:flex;justify-content: center;align-items: center">
-                                                                <select multiple="multiple" id="my-select3"
-                                                                    name="my-select[]">
-                                                                    <option value='elem_1'>elem 1</option>
-                                                                    <option value='elem_2'>elem 2</option>
-                                                                    <option value='elem_3'>elem 3</option>
-                                                                    <option value='elem_4'>elem 4</option>
-                                                                    <option value='elem_100'>elem 100</option>
+                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" style="width:350px">
+                                                                    <option style="background-color: Pink;">a</option>
+                                                                    <option style="background-color: Pink;">b</option>
+                                                                    <option style="background-color: Pink;">c</option>
+                                                                    <option >d</option>
                                                                 </select>
+                                                                <button type="button" style="width:50px" onclick="sonClickEvent(0,0,0)" id="shift1" >>></button>
+                                                                <button type="button" style="width:50px" onclick="rsonClickEvent(0,0,0)" id="rshift1"><<</button>
+                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" style="width:350px"></select>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -529,12 +526,68 @@
     <script src="../assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
     <!-- Material Dashboard DEMO methods, don't include it in your project! -->
     <script src="../assets/demo/demo.js"></script>
+    <script type="text/javascript">
+        function rsonClickEvent(UNIT, PACKAGE_NUMBER, ROW_NUMBER)
+        {
+            var target = "UNITPACKAGE" + UNIT + "PACKAGE_NUMBER" + PACKAGE_NUMBER + "DYN_TR" + ROW_NUMBER+ "TARGET";
+            var source = "UNITPACKAGE" + UNIT + "PACKAGE_NUMBER" + PACKAGE_NUMBER + "DYN_TR" + ROW_NUMBER+ "SOURCE";
+
+            var selectedItems = getSelectOptions(document.getElementById(target));
+            if (selectedItems)
+            {
+                for (var i = 0; i < selectedItems.length; i++)
+                {
+                    var option = new Option(selectedItems[i].text, selectedItems[i].text);
+
+                    document.getElementById(source).appendChild(option);
+                    selectedItems[i].remove();
+                }
+            }
+
+            GS1_UDI_GEN(UNIT, PACKAGE_NUMBER, ROW_NUMBER);
+        }
+
+        function sonClickEvent(UNIT, PACKAGE_NUMBER, ROW_NUMBER)
+        {
+            var target = "UNITPACKAGE" + UNIT + "PACKAGE_NUMBER" + PACKAGE_NUMBER + "DYN_TR" + ROW_NUMBER+ "TARGET";
+            var source = "UNITPACKAGE" + UNIT + "PACKAGE_NUMBER" + PACKAGE_NUMBER + "DYN_TR" + ROW_NUMBER+ "SOURCE";
+
+            var selectedItems = getSelectOptions(document.getElementById(source));
+            if (selectedItems)
+            {
+                for (var i = 0; i < selectedItems.length; i++)
+                {
+                    var option = new Option(selectedItems[i].text, selectedItems[i].text);
+
+                    document.getElementById(target).appendChild(option);
+                    selectedItems[i].remove();
+                }
+            }
+
+            GS1_UDI_GEN(UNIT, PACKAGE_NUMBER, ROW_NUMBER);
+        }
+
+        function getSelectOptions(select)
+        {
+            var result = [];
+            var options = select.options;
+            var opt;
+
+            for (var i = 0, iLen = options.length; i < iLen; i++)
+            {
+                opt = options[i];
+
+                if (opt.selected)
+                {
+                    result.push(opt);
+                }
+            }
+            return result;
+        }
+    </script>
     <script>
         $(document).ready(function () {
 
-            $('#my-select').multiSelect();
-            $('#my-select2').multiSelect();
-            $('#my-select3').multiSelect();
 
             $().ready(function () {
                 $sidebar = $('.sidebar');
