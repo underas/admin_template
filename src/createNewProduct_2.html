@@ -20,8 +20,41 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/index.css">
-    <link href="../assets/css/multi-select.css" media="screen" rel="stylesheet" type="text/css">
-
+    <style>
+        .select-mul{
+            width: 100%;
+            height: 250px;
+            max-height: 250px;
+            overflow: auto;
+            box-shadow: 2px 2px 10px gray;
+            border: none;
+            border-radius: 6px;
+        }
+        .select-mul>option {
+            font-size: 24px;
+            padding-left: 8px;
+            transition: .2s;
+        }
+        .select-mul .option_important{
+            background-color: #eeb9b9;
+        }
+        .select-mul>option:hover{
+            cursor: pointer;
+            background-color: #00263E !important;
+            color: white;
+        }
+        .custom-botton{
+            width: 45%;
+            border-radius: 8px;
+            padding: 7px;
+            box-shadow: 2px 2px 10px gray;
+        }
+        .custom-botton:hover{
+            cursor: pointer;
+            background-color: #00263E !important;
+            color: white;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -323,17 +356,30 @@
                                                             </div>
                                                         </div>
                                                         <div class="row mt-5 mb-3">
-                                                            <div class="col-12"
-                                                                style="display:flex;justify-content: center;align-items: center">
-                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" style="width:350px">
-                                                                <option style="background-color: #eeb9b9;">a</option>
-                                                                <option style="background-color: #eeb9b9;">b</option>
-                                                                <option style="background-color: #eeb9b9;">c</option>
-                                                                <option >d</option>
-                                                            </select>
-                                                                <button type="button" style="width:50px" onclick="sonClickEvent(0,0,0)" id="shift1" >>></button>
-                                                                <button type="button" style="width:50px" onclick="rsonClickEvent(0,0,0)" id="rshift1"><<</button>
-                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" style="width:350px"></select>
+                                                            <div class="col-5">
+                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0SOURCE" class="select-mul">
+                                                                    <option class="option_important">a</option>
+                                                                    <option class="option_important">b</option>
+                                                                    <option class="option_important">c</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                    <option >d</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-2" style="display: flex;align-items: center;justify-content: space-between">
+                                                                <button type="button" class="custom-botton" onclick="sonClickEvent(0,0,0)" id="shift1" >>></button>
+                                                                <button type="button" class="custom-botton" onclick="rsonClickEvent(0,0,0)" id="rshift1"><<</button>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" class="select-mul"></select>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -487,7 +533,6 @@
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
     <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <script src="../assets/js/jquery.multi-select.js"></script>
     <!-- Plugin for the momentJs  -->
     <script src="../assets/js/plugins/moment.min.js"></script>
     <!--  Plugin for Sweet Alert -->
