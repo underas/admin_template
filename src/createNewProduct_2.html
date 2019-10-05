@@ -44,10 +44,11 @@
             color: white;
         }
         .custom-botton{
-            width: 45%;
+            width: 100%;
             border-radius: 8px;
-            padding: 7px;
+            padding: 10px;
             box-shadow: 2px 2px 10px gray;
+            outline: none !important;
         }
         .custom-botton:hover{
             cursor: pointer;
@@ -374,9 +375,17 @@
                                                                     <option >d</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-2" style="display: flex;align-items: center;justify-content: space-between">
-                                                                <button type="button" class="custom-botton" onclick="sonClickEvent(0,0,0)" id="shift1" >>></button>
-                                                                <button type="button" class="custom-botton" onclick="rsonClickEvent(0,0,0)" id="rshift1"><<</button>
+                                                            <div class="col-2" style="display: flex;flex-direction: column;justify-content: center;">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <button type="button" class="custom-botton" onclick="sonClickEvent(0,0,0)" id="shift1" >>></button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12 mt-4">
+                                                                        <button type="button" class="custom-botton" onclick="rsonClickEvent(0,0,0)" id="rshift1"><<</button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="col-5">
                                                                 <select multiple id="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" name="UNITPACKAGE0PACKAGE_NUMBER0DYN_TR0TARGET" class="select-mul"></select>
